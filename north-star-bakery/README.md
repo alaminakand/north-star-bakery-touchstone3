@@ -1,6 +1,6 @@
-# North Star Bakery Website
+# North Star Bakery Website — Touchstone 4
 
-Touchstone 3 project for *Introduction to Web Development*.
+Responsive multi-page project with client-side interactivity for *Introduction to Web Development*.
 
 ## Pages
 
@@ -17,5 +17,9 @@ Touchstone 3 project for *Introduction to Web Development*.
 - Flexbox layouts across navigation, cards, features, and forms
 - Media query at 48rem for larger screens
 - Responsive images and accessible media fallback text
+- Product favorites that dynamically update the page
+- `localStorage` persistence for favorites and customer details
+- JavaScript form validation with field-level feedback
+- Functions plus arrays and objects for organized client-side data
 
 Open `index.html` in a browser to preview the site.
