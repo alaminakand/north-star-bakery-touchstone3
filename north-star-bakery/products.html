@@ -21,10 +21,16 @@
         </section>
 
         <section class="section-wrap">
-            <div class="card-row two-up">
-                <article class="card"><p class="eyebrow">From $3–$6</p><h2>Pastries</h2><p>Croissants, fruit danishes, cinnamon rolls, muffins, and scones. Assorted dozens begin at $36.</p></article>
-                <article class="card"><p class="eyebrow">From $35</p><h2>Cakes and Celebrations</h2><p>Layer cakes, sheet cakes, cupcakes, and custom designs. Please request custom orders at least seven days ahead.</p></article>
+            <div class="card-row favorite-grid">
+                <article class="card product-card"><p class="eyebrow">From $6–$11</p><h2>Artisan Breads</h2><p>Country sourdough, multigrain, rye, focaccia, and rotating seasonal loaves.</p><button class="favorite-button" type="button" data-product="artisan-breads" aria-pressed="false">Add to favorites</button></article>
+                <article class="card product-card"><p class="eyebrow">From $3–$6</p><h2>Pastries</h2><p>Croissants, fruit danishes, cinnamon rolls, muffins, and scones. Assorted dozens begin at $36.</p><button class="favorite-button" type="button" data-product="pastries" aria-pressed="false">Add to favorites</button></article>
+                <article class="card product-card"><p class="eyebrow">From $35</p><h2>Celebration Cakes</h2><p>Layer cakes, sheet cakes, cupcakes, and custom designs. Please request custom orders at least seven days ahead.</p><button class="favorite-button" type="button" data-product="celebration-cakes" aria-pressed="false">Add to favorites</button></article>
             </div>
+        </section>
+
+        <section class="favorites-panel section-wrap" aria-labelledby="favorites-heading">
+            <div><p class="eyebrow">Saved for later</p><h2 id="favorites-heading">Your Bakery Favorites</h2><p>Select products above to remember them for your next visit.</p></div>
+            <div><p id="favorites-status" class="favorites-status" aria-live="polite">No favorites saved yet.</p><ul id="favorites-list"></ul><button id="clear-favorites" class="secondary-button" type="button" hidden>Clear favorites</button></div>
         </section>
 
         <section class="section-wrap">
@@ -39,5 +45,6 @@
     </main>
 
     <footer><p>&copy; 2026 North Star Bakery. Made with care for our community.</p></footer>
+    <script src="script.js"></script>
 </body>
 </html>
